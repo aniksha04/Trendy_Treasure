@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Trendy Treasure Favicon">
+  <rect width="64" height="64" rx="14" fill="#242321" />
+  <!-- Minimalist shopping bag outline in warm beige -->
+  <path d="M21 24h22l2.5 24.5a2 2 0 0 1-2 2.2H20.5a2 2 0 0 1-2-2.2L21 24Z" fill="#E9DFD0" fill-opacity="0.1" stroke="#E9DFD0" stroke-width="2.4" stroke-linejoin="round" />
+  <path d="M25.5 24v-4.5a6.5 6.5 0 0 1 13 0V24" fill="none" stroke="#E9DFD0" stroke-width="2.4" stroke-linecap="round" />
+  <!-- Four-point treasure star in champagne gold -->
+  <path d="M32 30l2.1 5.4L39.5 37.5l-5.4 2.1L32 45l-2.1-5.4-5.4-2.1 5.4-2.1L32 30Z" fill="#C3A477" />
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "Trendy Treasure",
+  "description": "Find it. Love it. Shop it. A curated luxury Amazon affiliate discovery platform for fashion, beauty, home decor, electronics, stationery, and lifestyle finds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

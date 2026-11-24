@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO & Brand Metadata -->
+    <title>Trendy Treasure — Find it. Love it. Shop it.</title>
+    <meta
+      name="description"
+      content="Trendy Treasure is a curated luxury Amazon affiliate discovery platform featuring elevated fashion, skincare, home decor, electronics, stationery, and lifestyle finds."
+    />
+    <meta property="og:title" content="Trendy Treasure — Find it. Love it. Shop it." />
+    <meta
+      property="og:description"
+      content="Discover timeless fashion, skincare, home decor, electronics, stationery, and lifestyle pieces curated for everyday luxury."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Brand Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/logo/favicon.svg" />
+
+    <!-- Free Google Fonts: Cormorant Garamond (Luxury Display) + Plus Jakarta Sans (Clean Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Visible Amazon Affiliate Disclosure Strip (Non-sticky to preserve mobile viewport) -->
+    <div class="disclosure-strip" role="note" aria-label="Affiliate disclosure">
+      <div class="container disclosure-inner">
+        <p>
+          <strong>Affiliate Disclosure:</strong> Trendy Treasure participates in the Amazon Services
+          LLC Associates Program. Links open on Amazon and may earn a qualifying commission at no
+          extra cost to you.
+        </p>
+      </div>
+    </div>
+
+    <!-- Primary Navigation Bar (Strict 3-Zone Header) -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Mark & Wordmark -->
+        <a href="#home" class="brand-lockup" aria-label="Trendy Treasure Home">
+          <img
+            src="./assets/logo/trendy-treasure-mark.svg"
+            alt=""
+            width="34"
+            height="34"
+            class="brand-icon"
+            referrerpolicy="no-referrer"
+          />
+          <span class="brand-wordmark">
+            Trendy <span class="brand-accent">Treasure</span>
+          </span>
+        </a>
+
+        <!-- Zone 2: Desktop Single-Line Navigation Links -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#categories" class="nav-link">Categories</a>
+          <a href="#trending" class="nav-link">Trending Finds</a>
+          <a href="#deals" class="nav-link">Best Deals</a>
+          <a href="#about" class="nav-link">About Us</a>
+        </nav>
+
+        <!-- Zone 3: Search Trigger & Mobile Menu Button -->
+        <div class="header-actions">
+          <button
+            type="button"
+            class="icon-action-btn"
+            id="header-search-trigger"
+            aria-label="Jump to product search"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span class="action-btn-label">Search</span>
+          </button>
+
+          <button
+            type="button"
+            class="mobile-menu-toggle"
+            id="mobile-menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+          >
+            <svg
+              class="menu-icon-open"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="7" x2="21" y2="7"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="17" x2="21" y2="17"></line>
+            </svg>
+            <svg
+              class="menu-icon-close"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <nav
+        class="mobile-nav-drawer"
+        id="mobile-nav-drawer"
+        aria-label="Mobile Navigation"
+        hidden
+      >
+        <div class="container mobile-nav-inner">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#categories" class="mobile-nav-link">Categories</a>
+          <a href="#trending" class="mobile-nav-link">Trending Finds</a>
+          <a href="#deals" class="mobile-nav-link">Best Deals</a>
+          <a href="#about" class="mobile-nav-link">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Page Content -->
+    <main id="main-content">
+      <!-- 1. HERO SECTION -->
+      <section class="hero-section" id="home" aria-labelledby="hero-heading">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="section-kicker">Curated Amazon Discovery</p>
+            <h1 id="hero-heading" class="hero-title">
+              Elevated Essentials for Refined Living
+            </h1>
+            <p class="hero-tagline">Find it. Love it. Shop it.</p>
+            <p class="hero-description">
+              A thoughtfully edited showcase of timeless fashion accessories, botanical skincare,
+              sculptural home objects, precision electronics, and fine stationery available through
+              Amazon.
+            </p>
+            <div class="hero-actions">
+              <a href="#categories" class="btn btn-primary">Explore Now</a>
+              <a href="#deals" class="btn btn-outline">View Best Deals</a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="image-frame hero-image-frame">
+              <img
+                src="./assets/images/hero-luxury.jpg"
+                alt="Curated luxury essentials on travertine stone including a tan leather handbag, champagne-gold wristwatch, amber perfume bottle, and linen notebook"
+                class="hero-image"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. CATEGORIES, SEARCH & FEATURED PRODUCT CATALOG -->
+      <section class="catalog-section" id="categories" aria-labelledby="categories-heading">
+        <div class="container">
+          <!-- Section Header + Live Search Toolbar -->
+          <div class="section-header-split">
+            <div>
+              <p class="section-kicker">The Collection</p>
+              <h2 id="categories-heading" class="section-title">Curated Categories &amp; Featured Finds</h2>
+            </div>
+
+            <!-- Working Live Search Input -->
+            <div class="search-control-wrap">
+              <label for="product-search" class="sr-only">Search curated products</label>
+              <div class="search-input-box">
+                <svg
+                  class="search-field-icon"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input
+                  type="search"
+                  id="product-search"
+                  class="search-input"
+                  placeholder="Search leather tote, serum, lamp..."
+                  autocomplete="off"
+                />
+                <button
+                  type="button"
+                  id="clear-search-btn"
+                  class="clear-search-btn"
+                  aria-label="Clear search query"
+                  hidden
+                >
+                  Clear
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 Interactive Category Cards -->
+          <div class="category-cards-grid" id="category-cards-grid" aria-label="Product Categories">
+            <!-- Category cards are hydrated by script.js so counts stay accurate -->
+          </div>
+
+          <!-- Interactive Filter Tabs + Collection Scope -->
+          <div class="catalog-toolbar">
+            <div
+              class="category-tabs"
+              id="category-tabs"
+              role="tablist"
+              aria-label="Filter products by category"
+            >
+              <!-- Filter tabs rendered by script.js -->
+            </div>
+
+            <div class="scope-filter-group" aria-label="Filter by collection highlight">
+              <button type="button" class="scope-btn active" data-scope="all">All Finds</button>
+              <button type="button" class="scope-btn" data-scope="featured">Featured</button>
+              <button type="button" class="scope-btn" data-scope="trending">Trending</button>
+              <button type="button" class="scope-btn" data-scope="deal">Best Deals</button>
+            </div>
+          </div>
+
+          <!-- Live Result Counter -->
+          <div class="catalog-meta-row">
+            <p id="results-summary" class="results-summary" aria-live="polite">
+              Showing curated products
+            </p>
+            <button type="button" id="reset-filters-inline" class="text-action-btn" hidden>
+              Reset all filters
+            </button>
+          </div>
+
+          <!-- Dynamic Product Grid -->
+          <div class="product-grid" id="catalog-grid">
+            <!-- Product cards injected cleanly by script.js -->
+          </div>
+
+          <!-- Empty State (Shown when search/filter returns 0 products) -->
+          <div class="empty-state" id="empty-state" hidden>
+            <p class="empty-state-title">No matching treasures found</p>
+            <p class="empty-state-copy">
+              Try a broader keyword or switch back to all curated categories.
+            </p>
+            <button type="button" id="empty-reset-btn" class="btn btn-primary">
+              Show All Products
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TRENDING FINDS SECTION -->
+      <section class="editorial-band trending-section" id="trending" aria-labelledby="trending-heading">
+        <div class="container">
+          <div class="section-header-split">
+            <div>
+              <p class="section-kicker">Most Viewed This Season</p>
+              <h2 id="trending-heading" class="section-title">Trending Finds</h2>
+            </div>
+            <p class="section-subcopy">
+              Standout designs selected for material craft, understated presence, and lasting utility.
+            </p>
+          </div>
+
+          <div class="product-grid" id="trending-grid">
+            <!-- Trending product cards injected by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. BEST DEALS SECTION -->
+      <section class="editorial-band deals-section" id="deals" aria-labelledby="deals-heading">
+        <div class="container">
+          <div class="section-header-split">
+            <div>
+              <p class="section-kicker">Seasonal Value Picks</p>
+              <h2 id="deals-heading" class="section-title">Best Deals</h2>
+            </div>
+            <p class="section-subcopy">
+              Verified pricing is displayed only when confirmed; live pricing and availability update
+              directly on Amazon.
+            </p>
+          </div>
+
+          <div class="product-grid" id="deals-grid">
+            <!-- Best deals product cards injected by script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ABOUT US & NEWSLETTER SECTION -->
+      <section class="about-newsletter-section" id="about" aria-labelledby="about-heading">
+        <div class="container about-newsletter-grid">
+          <!-- Brand Story & Transparent Disclosure -->
+          <div class="about-panel">
+            <p class="section-kicker">About Trendy Treasure</p>
+            <h2 id="about-heading" class="section-title">Quiet Luxury, Thoughtfully Edited</h2>
+            <p class="about-copy">
+              Trendy Treasure was created for shoppers who value calm curation over endless scroll.
+              We research materials, design proportions, and everyday usefulness across Amazon to
+              present a focused edit of pieces worth owning.
+            </p>
+            <div class="disclosure-box">
+              <p class="disclosure-box-title">Amazon Associates Transparency</p>
+              <p class="disclosure-box-text">
+                Trendy Treasure does not process payments or store checkout details. Clicking any
+                &ldquo;View on Amazon&rdquo; button opens the corresponding product page directly on
+                Amazon in a new browser tab. As an Amazon Associate, we may earn from qualifying
+                purchases.
+              </p>
+            </div>
+          </div>
+
+          <!-- Newsletter Form with Vanilla JS Validation -->
+          <div class="newsletter-panel">
+            <p class="section-kicker">The Weekly Edit</p>
+            <h2 class="newsletter-heading">Receive New Curated Finds</h2>
+            <p class="newsletter-copy">
+              Join our quiet weekly dispatch featuring fresh product discoveries and verified
+              seasonal value picks. No noise, unsubscribe anytime.
+            </p>
+
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <div class="form-field">
+                <label for="newsletter-name" class="form-label">First Name (Optional)</label>
+                <input
+                  type="text"
+                  id="newsletter-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g. Clara"
+                  autocomplete="given-name"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="newsletter-email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="email"
+                  class="form-input"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                  aria-describedby="newsletter-feedback"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Subscribe to The Edit</button>
+
+              <p
+                id="newsletter-feedback"
+                class="newsletter-feedback"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6. PROFESSIONAL FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand-lockup">
+            <img
+              src="./assets/logo/favicon.svg"
+              alt=""
+              width="32"
+              height="32"
+              class="footer-brand-icon"
+              referrerpolicy="no-referrer"
+            />
+            <span class="footer-brand-name">
+              Trendy <span class="brand-accent">Treasure</span>
+            </span>
+          </div>
+          <p class="footer-tagline">Find it. Love it. Shop it.</p>
+          <p class="footer-disclosure">
+            Independent Amazon affiliate curation platform. All product links open directly on
+            Amazon in a new tab. Prices and availability are subject to change on Amazon.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Navigation</h3>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#trending">Trending Finds</a></li>
+            <li><a href="#deals">Best Deals</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Categories</h3>
+          <ul class="footer-links-list" id="footer-category-links">
+            <li><a href="#categories" data-footer-category="Fashion and Accessories">Fashion &amp; Accessories</a></li>
+            <li><a href="#categories" data-footer-category="Beauty and Skincare">Beauty &amp; Skincare</a></li>
+            <li><a href="#categories" data-footer-category="Home Decor">Home Decor</a></li>
+            <li><a href="#categories" data-footer-category="Electronics and Gadgets">Electronics &amp; Gadgets</a></li>
+            <li><a href="#categories" data-footer-category="Stationery">Stationery</a></li>
+            <li><a href="#categories" data-footer-category="Lifestyle Products">Lifestyle Products</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Trendy Treasure. All rights reserved.</p>
+        <p class="footer-note">Amazon Associate Affiliate Showcase</p>
+      </div>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

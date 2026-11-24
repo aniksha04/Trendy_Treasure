@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" width="280" height="56" role="img" aria-label="Trendy Treasure Logo">
+  <!-- Minimalist shopping bag emblem -->
+  <g transform="translate(4, 4)">
+    <path d="M11 16h24l2.4 22.8a2.2 2.2 0 0 1-2.2 2.4H10.8a2.2 2.2 0 0 1-2.2-2.4L11 16Z" fill="#E9DFD0" fill-opacity="0.55" stroke="#242321" stroke-width="2" stroke-linejoin="round" />
+    <path d="M16.5 16v-4a6.5 6.5 0 0 1 13 0v4" fill="none" stroke="#242321" stroke-width="2" stroke-linecap="round" />
+    <path d="M23 22.5l1.9 4.8 4.8 1.9-4.8 1.9L23 36l-1.9-4.9-4.8-1.9 4.8-1.9L23 22.5Z" fill="#C3A477" />
+  </g>
+  <!-- Editorial wordmark -->
+  <text x="58" y="34" font-family="Georgia, 'Times New Roman', serif" font-size="23" font-weight="600" letter-spacing="1.2" fill="#242321">
+    TRENDY <tspan fill="#A68658">TREASURE</tspan>
+  </text>
+</svg>
